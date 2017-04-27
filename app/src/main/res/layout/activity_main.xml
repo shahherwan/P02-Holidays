@@ -9,14 +9,17 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:text="Types of Public Holidays in SG"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:text="Types of public Holidays SG"
+        android:textSize="25sp"
+        android:textColor="#000000"/>
 
     <ListView
-        android:id="@+id/lvFood"
+        android:id="@+id/type_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" >
+    </ListView>
 
 
 </LinearLayout>

@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * Created by 14049561 on 27/4/2017.
  */
 
-public class ListActivity extends AppCompatActivity{
+public class SecondActivity extends AppCompatActivity{
 
     TextView tvTitle2;
     ListView lvHoliday;
@@ -28,7 +28,7 @@ public class ListActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.actvity_listview);
+        setContentView(R.layout.activity_second);
 
         tvTitle2 = (TextView)findViewById(R.id.tvTitle2);
 
@@ -57,7 +57,7 @@ public class ListActivity extends AppCompatActivity{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 holiday selectedEvent = alHoliday.get(position);
 
-                Toast.makeText(ListActivity.this, selectedEvent.getName()
+                Toast.makeText(SecondActivity.this, selectedEvent.getName()
                                 + " Date:" + selectedEvent.getDate(),
                         Toast.LENGTH_LONG).show();
             }
